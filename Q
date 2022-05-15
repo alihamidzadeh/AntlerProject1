@@ -1,0 +1,4 @@
+آیا همچین چیزی داریم؟
+lib1, lib2 = require math, require animal;
+
+

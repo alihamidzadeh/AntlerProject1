@@ -1,0 +1,7 @@
+lib1 = from<math> require <floor>;
+
+lib = from <math> require <floor>;
+
+func = require<math>;
+
+public const int aa = 10;
