@@ -1,4 +1,4 @@
-grammar Project;
+grammar backupCode;
 
 //--------------------------------------------parser--------------------------------------------------------
 start: imports* define*;
@@ -8,9 +8,9 @@ importLibrary: VALIDNAME '=' REQUIRE '<' VALIDNAME '>' SEMICOLON;
 importFunction : VALIDNAME (',' VALIDNAME)* '=' FROM '<' VALIDNAME '>' (REQUIRE ' <' VALIDNAME '>' | '=>' '<' VALIDNAME '>') (',' FROM ' <' VALIDNAME '>' (REQUIRE '<' VALIDNAME '>' | '=>' '<' VALIDNAME '>' ))* SEMICOLON;
 //Defination Var............................................................................
 define : (definationVar | definationArray | initalArray);
-definationVar: ACCESSIBILITY? CONST? DATATYPE VALIDNAME ('=' (DATAVALUE))? (',' VALIDNAME ('=' (DATAVALUE))?)* SEMICOLON;
-definationArray: ACCESSIBILITY? CONST? DATATYPE VALIDNAME '[]' '=' NEW DATATYPE '[' DATAVALUE ']' SEMICOLON;
-initalArray : ACCESSIBILITY? CONST? DATATYPE VALIDNAME '[]' '=' DATATYPE '[' DATAVALUE (',' DATAVALUE)* ']' SEMICOLON;
+definationVar: ACCESSIBILITY? CONST? DATATYPE VALIDNAME ('=' (STRING|INT|DOUBLE|SCIENTIFICSYMBOL))? (',' VALIDNAME ('=' (STRING|INT|DOUBLE|SCIENTIFICSYMBOL))?)* SEMICOLON;
+definationArray: ACCESSIBILITY? CONST? DATATYPE VALIDNAME '[]' '=' NEW DATATYPE '[' (INT|DOUBLE|STRING|SCIENTIFICSYMBOL) ']' SEMICOLON;
+initalArray : ACCESSIBILITY? CONST? DATATYPE VALIDNAME '[]' '=' DATATYPE '[' (INT|DOUBLE|STRING|SCIENTIFICSYMBOL) (',' (INT|DOUBLE|STRING|SCIENTIFICSYMBOL))* ']' SEMICOLON;
 
 
 
