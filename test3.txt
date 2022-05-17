@@ -1,0 +1,116 @@
+//Define Lib, Func, Var, Array
+lib1 = require <numpy>;
+func1 = from <math> require <floor>;
+func2, func3 = from <math> require <floor1>, from <math> require <floor2>;
+int test1 = 10;
+int test2 = 50, test3;
+double test4, test5 = 10.25;
+double myArray2[] = [10.25, 10, -15, 1000.0005];
+int myArray1[] = new int[10];
+
+//......................................................................
+
+//Define Class
+class Dot (tempName) implements Movable, Plottable, Euclidean begin
+    private int px, py;
+    int number = isSunny ? 25 : (temperature / 2);
+    Dot (int px = 10, string name = "ALI", char ch = 'd') begin
+        this.px = px;
+        this.py = py;
+    end
+    int func1 () begin
+        for (int yoyo = 0; yoyo < 10 && count > 10; ++yoyo) begin
+            int xx = 5;
+            const Dot dot = Dot (1,2);
+            Point point = Null;
+        end
+
+        for pp in myList begin
+            newList.add(pp.name);
+            print(myList[0]);
+
+        end
+
+        while (!true) begin
+            print("hi");
+        end
+
+        do begin
+            print('bye');
+        end while (count >= 10)
+
+        if (!count) begin
+            print('123');
+        end
+        else if (count > 0 and 100 < count ) begin
+            print ('456');
+        end
+        else begin
+            print ('789');
+        end
+
+        if (name == "ALi") begin
+            print ("done!");
+        end
+
+        myFaveWeather = isSummer ? "Sunny" : "Snowy";
+
+        switch month.name begin
+            case "Jan":
+                print("It's January");
+            break;
+        end
+        return isSunny ? 25 : (temperature / 2);
+    end
+end
+
+//......................................................................
+//Define Switch/Case:
+class Dot (tempName) implements Movable, Plottable, Euclidean begin
+    int func1 () begin
+        switch month.name begin
+            case "jan":
+                print("It's January");
+                break;
+            case "Feb":
+
+            case "Dec":
+                print("Close Enough");
+                break;
+            default:
+                print("Try Again");
+        end
+    end
+end
+
+//......................................................................
+//Define If:
+class Dot (tempName) implements Movable, Plottable, Euclidean begin
+    double func1 (int num1, int num2) begin
+        double result;
+        if (!check_zero(num2)) begin
+            return Null;
+        end
+        result = num1 / num2;
+        return result;
+    end
+end
+
+//......................................................................
+Define Exception, Print:
+class Dot (tempName) implements Movable, Plottable, Euclidean begin
+    double func1 (int num1, int num2) begin
+        try begin
+            print("salam");
+        end
+        catch (DivideByZero, ValueError) begin
+            newList.add(pp.name);
+            print(err, test);
+            print(err,"opps.");
+            print(myVar1, myVar2, "Test 1", 'Test 2');
+            print(List[21]);
+        end
+        return result;
+    end
+end
+

@@ -1,0 +1,20 @@
+lib1 = from<math> require <floor>;
+
+lib = from<math> require <floor>;
+
+func = require<math>;
+
+public const int aa = 10;
+
+private int myn [] = new int [3];
+
+/* float myn [] = float [3.05,1,2,10.5]; */
+float msmsas [] = int [0.05, 42, 12.02];
+
+class chagh () implements amirhossein begin
+for (int xs = 25; xs < 10; xs++) begin
+int sa = 20;
+end
+end
+
+

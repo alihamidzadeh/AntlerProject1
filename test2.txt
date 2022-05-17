@@ -1,0 +1,37 @@
+require <math>;
+f1,f2 = from <math> require <floor> , from <math> require <abs>;
+
+class Student(Human) implements Walking, Learning begin
+    public int counter = 0;
+    int age;
+    private int ID;
+    public string name;
+
+    Student (string name, int age = 18) begin
+        this.name = name;
+        this.age = age;
+        counter++;
+        this.ID = counter;
+    end
+
+    public int getAge() begin
+        return age;
+    end
+end
+
+class Main begin
+    public void main(string arg) begin
+        Student stu1 = Student("amirreza");
+        Student stu2 = Student("Mohammadreza", 13);
+
+        Point point = null;
+
+        int x3 = 12;
+        int y3 = 13;
+        int z3;
+        z3 = y3 + x3 + 12;
+        string userName = "Ahm@d13*2";
+
+
+    end
+end
